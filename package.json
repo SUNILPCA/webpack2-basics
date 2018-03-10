@@ -1,0 +1,24 @@
+{
+  "name": "webpack2-basics",
+  "version": "1.0.0",
+  "description": "JavaScript Project with Webpack2",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack src/js/app.js dist/bundle.js",
+    "build:prod": "webpack src/js/app.js dist/bundle.js -p"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SUNILPCA/webpack2-basics.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SUNILPCA/webpack2-basics/issues"
+  },
+  "homepage": "https://github.com/SUNILPCA/webpack2-basics#readme",
+  "devDependencies": {
+    "webpack": "4.1.1"
+  }
+}
