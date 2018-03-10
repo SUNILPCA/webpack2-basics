@@ -1,14 +1,14 @@
-Set Config Values
+# Set Config Values
 $ git config --global user.name "<username>"
 $ git config --global user.email "<emailid>"
 
 $ git config --list [display all the configuration]
 
-Need Help
+# Need Help
 $ git help config
 $ git config --help
 
-Local Repo.
+# Local Repo.
 $ git init
 
 $ rm -rf .git [remove local git repo. means not git status or track of file]
@@ -20,25 +20,25 @@ $ touch .gitignore [create a gitingore folder]
 $ git reset [remove from stage]
 $ git clone <repo address>
 
-Pushing changes
+# Pushing changes
 $ git diff
 $ git pull origin master
 $ git push origin master [pushing to branch/master]
 
-Create Branch
+# Create Branch
 $ git branch <branch name>
 $ git checkout <branch name>
 $ git push -u origin <branch name> [after commit push branch to remote]
 $ git branch -a [checking for branch status]
 
-Merge a branch to master
+# Merge a branch to master
 $ git checkout master
 $ git pull origin master
 $ git branch --merged
 $ git merge <branch-name>
 $ git push origin master
 
-Deleting Branch:
+# Deleting Branch:
 $ git branch --merged [show the status of branch]
 $ git branch -d <branch name> [delete from local repo.]
 $ git branch -a [checking for branch status on master]
