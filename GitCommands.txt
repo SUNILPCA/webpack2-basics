@@ -14,7 +14,7 @@ $ git init
 $ rm -rf .git [remove local git repo. means not git status or track of file]
 $ git status
 $ git add -A [add all file to stage]
-$ git committ -m "messge" [committ files]
+$ git commit -m "messge" [committ files]
 $ git log
 $ touch .gitignore [create a gitingore folder]
 $ git reset [remove from stage]
