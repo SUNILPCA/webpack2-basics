@@ -44,3 +44,7 @@ $ git branch -d <branch name> [delete from local repo.]
 $ git branch -a [checking for branch status on master]
 $ git remove -v
 $ git push origin --delete <branch name> [delete form master/remort repo.]
+
+# Revert committee from master
+$ git reset --hard HEAD~2(which committee what to revert)
+$ git push origin -f
