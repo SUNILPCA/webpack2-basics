@@ -8,15 +8,25 @@ $ git config --list [display all the configuration]
 $ git help config
 $ git config --help
 
-# Local Repo.
-$ git init
-
-$ rm -rf .git [remove local git repo. means not git status or track of file]
-$ git status
+# Local Repo. (Creating new repository and Adding an existing project to GitHub using the command line)
+1.Create a new repository on GitHub. To avoid errors, do not initialize the new repository with README, license, or gitignore files. You   can add these files after your project has been pushed to GitHub.
+2.Open Git Bash
+$ git init [Initialize the local directory as a Git repository.]
 $ git add -A [add all file to stage]
 $ git commit -m "messge" [committ files]
+$ touch .gitignore [create a gitingore folder if any]
+$ git remote add origin remote repository URL
+# Sets the new remote
+git remote -v
+# Verifies the new remote URL
+$ git push origin master
+# Pushes the changes in your local repository up to the remote repository you specified as the origin
+
+# After push to GitHub, remove local git repo.
+$ rm -rf .git [remove local git repo. means not git status or track of file]
+$ git status
 $ git log
-$ touch .gitignore [create a gitingore folder]
+
 $ git reset [remove from stage]
 $ git clone <repo address>
 
@@ -28,6 +38,8 @@ $ git push origin master [pushing to branch/master]
 # Create Branch
 $ git branch <branch name>
 $ git checkout <branch name>
+$ git add -A [add all file to stage]
+$ git commit -m "messge" [committ files]
 $ git push -u origin <branch name> [after commit push branch to remote]
 $ git branch -a [checking for branch status]
 
